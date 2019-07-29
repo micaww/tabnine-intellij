@@ -1,0 +1,20 @@
+<idea-plugin>
+    <id>com.micaww.tabnine.tabnine_plugin</id>
+    <name>TabNine</name>
+    <vendor email="micahisnt@gmail.com">Micah Allen</vendor>
+
+    <description>Adds AI-based auto-completion to WebStorm using TabNine.</description>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products
+    <depends>com.intellij.modules.lang</depends>
+    -->
+
+    <extensions defaultExtensionNs="com.intellij">
+        <completion.contributor order="first" language="any" implementationClass="CompletionHandler"/>
+    </extensions>
+
+    <actions>
+    </actions>
+</idea-plugin>
